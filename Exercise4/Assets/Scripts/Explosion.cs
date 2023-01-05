@@ -24,6 +24,12 @@ public class Explosion : MonoBehaviour
     void Update()
     {
         // destroy the game object if the explosion has finished its animation
-
+        if (anim != null)
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
