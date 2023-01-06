@@ -139,6 +139,8 @@ GameObject:
   - component: {fileID: 1125914299}
   - component: {fileID: 1125914298}
   - component: {fileID: 1125914297}
+  - component: {fileID: 1125914294}
+  - component: {fileID: 1125914301}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -162,6 +164,20 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125914291}
   m_Enabled: 1
+--- !u!114 &1125914294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125914291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1989b9902dd4c7a48823f56e594b5cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabTeddyBear: {fileID: 1005400459988736111, guid: 8f039758ba713d444a8ae3a65359241d,
+    type: 3}
 --- !u!20 &1125914295
 Camera:
   m_ObjectHideFlags: 0
@@ -307,6 +323,19 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &1125914301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125914291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1989b9902dd4c7a48823f56e594b5cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabTeddyBear: {fileID: 0}
 --- !u!850595691 &1852507753
 LightingSettings:
   m_ObjectHideFlags: 0
