@@ -12,7 +12,7 @@ public class TeddyBear : MonoBehaviour
     GameObject prefabExplosion;
 
 	// death support
-	const float TeddyBearLifespanSeconds = 10;
+	const float TeddyBearLifespanSeconds = 5;
 	Timer deathTimer;
 
     /// <summary>
@@ -43,6 +43,10 @@ public class TeddyBear : MonoBehaviour
     void Update()
     {
 		// kill teddy bear if death timer finished
+        if (deathTimer.Finished)
+        {
+            Destroy(gameObject);
+        }
 
 	}
 
@@ -54,7 +58,8 @@ public class TeddyBear : MonoBehaviour
     {
         // only blow up when colliding with a teddy bear
         if (coll.gameObject.tag == "TeddyBear") {
-
+            Instantiate<GameObject>(prefabExplosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }
